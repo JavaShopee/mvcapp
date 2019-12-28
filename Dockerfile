@@ -1,3 +1,4 @@
 FROM tomcat:8.0
-EXPOSE 82
+COPY /target/SampleMvcApp.war /usr/local/tomcat/webapps/  
+EXPOSE 89
 CMD ["catalina.sh", "run"]
